@@ -3,6 +3,7 @@ from class_grade import Grades
 from cipher import Cipher
 from folder.tayms2 import Tayms
 from inventory import InventoryApp
+from Checker import Search
 
 
 class ViewMenu:
@@ -25,7 +26,7 @@ class ViewMenu:
         self.soft4_button = Button(self.button_frame, text='SOFTWARE 4', height=2, width=20, font='Lato 10 bold', command=lambda: self.toSoftware(4))
         self.soft4_button.grid(column=0, row=3, pady=10)
 
-        self.soft5_button = Button(self.button_frame, text='SOFTWARE 5', height=2, width=20, font='Lato 10 bold')
+        self.soft5_button = Button(self.button_frame, text='SOFTWARE 5', height=2, width=20, font='Lato 10 bold', command=lambda: self.toSoftware(5))
         self.soft5_button.grid(column=0, row=4, pady=10)
 
         self.quit_button = Button(self.button_frame, text='EXIT', height=2, width=20, font='Lato 10 bold', command=lambda: self.quitMenu())
@@ -57,6 +58,11 @@ class ViewMenu:
             case 4:
                 window.title("Inventory")
                 InventoryApp(window, self.toMenu)
+
+            case 5:
+                window.title("Search")
+                Search(window, self.toMenu)
+
 
 window = Tk()
 
