@@ -1,9 +1,7 @@
 from tkinter import *
-from tkinter.ttk import Notebook, Progressbar, Separator, Style
+from tkinter.ttk import Notebook, Style
 from random import randint
 from faker import Faker
-
-# {"configure": {"background": 'white',"foreground": "white", "relief": "flat"}}
 
 
 class Grades:
