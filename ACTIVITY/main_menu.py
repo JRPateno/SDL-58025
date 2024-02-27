@@ -1,8 +1,8 @@
 from tkinter import *
-from class4 import Grades
-from crypt import Cipher
-from s1.tayms2 import Tayms
-from testtt import InventoryApp
+from class_grade import Grades
+from cipher import Cipher
+from folder.tayms2 import Tayms
+from inventory import InventoryApp
 
 
 class ViewMenu:
